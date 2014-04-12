@@ -1,0 +1,49 @@
+#This file allows for the addition of custom generation TEMPLATES to World.cfg.
+#Generation parameters are changed inside World.cfg.
+#These values are only used as defaults and in the template comments.
+#
+#Format (TAB DELIMITED): GenType	Name	BlockID	BlockMeta	ClusterSize	NumClusters	minY	maxY	regen
+#GenType is either UNIFORM or NORMAL. If NORMAL, minY is the average height and maxY is the maximum variance.
+#
+#Creates a template with default values of 4 clusters of 4 ores (1000:0) randomly between y = 32 and y = 64. Retrogen Enabled:
+#UNIFORM	testUniform	1000	0	4	4	32	64	true
+#
+#Creates a template with default values of 6 clusters of 16 ores (1000:1) in a 32-height Normal Distribution centered at y = 32. RetroGen Disabled:
+#NORMAL	testNormal	1000	1	16	6	32	16	false
+#
+
+UNIFORM	oreApatitef1	1398	0	6	7	50	85	true
+UNIFORM	oreCertusae1	854	0	4	4	5	22	true
+UNIFORM	oreCertusae2	854	0	4	4	38	53	true
+UNIFORM	oreCertusae2	854	0	4	4	98	117	true
+UNIFORM	oreAluminumtic1	1475	5	5	7	32	45	true
+UNIFORM	oreAluminumtic2	1475	5	5	7	64	81	true
+UNIFORM	oreAluminumtic3	1475	5	4	4	105	117	true
+UNIFORM	oreDarkironfz	2175	0	4	4	5	13	true
+NORMAL	oreLapis	21	0	2	4	20	5	true
+UNIFORM	oreIronvan1	15	0	6	10	48	63	true
+UNIFORM	oreIronvan2	15	0	6	8	93	117	true
+UNIFORM	oreIronvan3	15	0	8	7	142	171	true
+UNIFORM	oreCopperte1	2001	0	6	6	59	76	true
+UNIFORM	oreCopperte2	2001	0	6	4	103	127	true
+UNIFORM	oreCopperte3	2001	0	6	5	138	157	true
+UNIFORM	oreTinte1	2001	1	8	4	38	56	true
+UNIFORM	oreTinte2	2001	1	4	4	86	103	true
+UNIFORM	oreTinte3	2001	1	6	4	124	140	true
+UNIFORM	oreApatitef2	1398	0	6	10	130	230	true
+UNIFORM	oreDiamond	56	0	2	2	18	24	true
+UNIFORM	oreCoalVan1	16	0	14	8	48	92	true
+UNIFORM	oreCoalVan2	16	0	10	8	93	137	true
+UNIFORM	oreCoalVan3	16	0	10	8	138	182	true
+UNIFORM	oreCoalVan4	16	0	10	14	183	227	true
+UNIFORM	oreSilverte1	2001	2	4	4	44	52	true
+UNIFORM	oreSilverte2	2001	2	2	5	180	220	true
+UNIFORM	oreGoldVan1	14	0	4	3	23	32	true
+UNIFORM	oreGoldVan2	14	0	6	1	180	220	true
+UNIFORM	oreNickelte1	2001	4	4	3	38	47	true
+UNIFORM	oreNickelte2	2001	4	4	4	109	124	true
+UNIFORM	oreNickelte3	2001	4	6	4	165	180	true
+UNIFORM	oreLeadte1	2001	3	8	4	43	62	true
+UNIFORM	oreLeadlte2	2001	3	4	4	131	141	true
+UNIFORM	marirutileore	1054	2	4	4	15	64	true
+NORMAL	oreSaltpeterrc	458	1	16	6	8	35	false

@@ -1,0 +1,187 @@
+diff -ru 1.1.0-base/IguanaTweaksTConstruct.cfg 1.1.0-mod/IguanaTweaksTConstruct.cfg
+--- 1.1.0-base/IguanaTweaksTConstruct.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/IguanaTweaksTConstruct.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -8,19 +8,19 @@
+ 
+ crafting {
+     # Allows blank patterns to be crafted with 4 sticks in a square
+-    B:easyBlankPatternRecipe=true
++    B:easyBlankPatternRecipe=false
+ 
+     # Allows you to make tool parts in a normal crafting window
+-    B:easyPartCrafting=true
++    B:easyPartCrafting=false
+ 
+     # Allows you to rotate the the tier 1 patterns in a normal crafting window
+-    B:easyPatternCrafting=true
++    B:easyPatternCrafting=false
+ 
+     # Allows you create tinkers tools in a normal crafting window
+-    B:easyToolCreation=true
++    B:easyToolCreation=false
+ 
+     # Allows you add modifications to tools in a normal crafting window
+-    B:easyToolModification=true
++    B:easyToolModification=false
+ }
+ 
+ 
+@@ -205,11 +205,11 @@
+ 
+     # Change durability of all materials here (higher = tougher)
+     I:durabilityPercentage=100
+-    B:easyBlankPatternRecipe=true
+-    B:easyPartCrafting=true
+-    B:easyPatternCrafting=true
+-    B:easyToolCreation=true
+-    B:easyToolModification=true
++    B:easyBlankPatternRecipe=false
++    B:easyPartCrafting=false
++    B:easyPatternCrafting=false
++    B:easyToolCreation=false
++    B:easyToolModification=false
+ 
+     # Change mining speed of all materials here (higher = faster)
+     I:miningSpeedPercentage=100
+diff -ru 1.1.0-base/InvTweaks.cfg 1.1.0-mod/InvTweaks.cfg
+--- 1.1.0-base/InvTweaks.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/InvTweaks.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -8,10 +8,10 @@
+ autoRefillBeforeBreak=false
+ autoRefillDamageThreshhold=5
+ enableSounds=true
+-enableShortcuts=true
++enableShortcuts=false
+ enableAutoEquipArmor=false
+ enableServerItemSwap=true
+-keySortInventory=R
++keySortInventory=BACKSLASH
+ shortcutKeyAllItems=LCONTROL+LSHIFT, RCONTROL+RSHIFT
+ shortcutKeyEverything=SPACE
+ shortcutKeyOneItem=LCONTROL, RCONTROL
+diff -ru 1.1.0-base/QuarryPlus.cfg 1.1.0-mod/QuarryPlus.cfg
+--- 1.1.0-base/QuarryPlus.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/QuarryPlus.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -24,7 +24,7 @@
+ 
+ general {
+     # 0:AsCheatRecipe,1:EasyRecipe,2:NormalRecipe(Default),3:HardRecipe,other:NormalRecipe
+-    I:RecipeDifficulty=2
++    I:RecipeDifficulty=3
+     ####################
+     # PowerSetting
+     ####################
+diff -ru 1.1.0-base/Sync.cfg 1.1.0-mod/Sync.cfg
+--- 1.1.0-base/Sync.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/Sync.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -45,7 +45,7 @@
+     # 0 = No
+     # 1 = Yes
+     # 2 = Yes, but only on actual Hardcore mode.
+-    I:hardcoreMode=2
++    I:hardcoreMode=1
+ 
+     # Allow overriding the death of a player if the player has other shells?
+     # The player will resync to the nearest shell.
+diff -ru 1.1.0-base/cofh/ThermalExpansion.cfg 1.1.0-mod/cofh/ThermalExpansion.cfg
+--- 1.1.0-base/cofh/ThermalExpansion.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/cofh/ThermalExpansion.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -265,9 +265,9 @@
+     ####################
+ 
+     crafting {
+-        B:Crucible.AllowRecipeOverwrite=false
+-        B:Furnace.AllowRecipeOverwrite=false
+-        B:Pulverizer.AllowRecipeOverwrite=false
++        B:Crucible.AllowRecipeOverwrite=true
++        B:Furnace.AllowRecipeOverwrite=true
++        B:Pulverizer.AllowRecipeOverwrite=true
+         B:Pulverizer.BlazeRod=true
+         B:Pulverizer.BlizzRod=true
+         B:Pulverizer.Bone=true
+@@ -285,8 +285,8 @@
+         I:RockGen.Stone.Lava=0
+         I:RockGen.Stone.Time=80
+         I:RockGen.Stone.Water=1000
+-        B:Sawmill.AllowRecipeOverwrite=false
+-        B:Smelter.AllowRecipeOverwrite=false
++        B:Sawmill.AllowRecipeOverwrite=true
++        B:Smelter.AllowRecipeOverwrite=true
+         B:Smelter.Steel.Enable=true
+         B:Transposer.AllowRecipeOverwrite=false
+     }
+@@ -296,15 +296,15 @@
+     ####################
+ 
+     recipe {
+-        B:Breaker.UseDiamondPickaxe=false
++        B:Breaker.UseDiamondPickaxe=true
+         B:MachineFrame.AllowSteel=true
+-        B:MachineFrame.RequireSteel=false
++        B:MachineFrame.RequireSteel=true
+         B:PneumaticServo.AllowBronze=false
+         B:PneumaticServo.AllowInvar=false
+         B:PneumaticServo.AllowSilver=false
+         B:PneumaticServo.AllowSteel=true
+-        B:Pulverizer.AddDiamonds=false
+-        B:Smelter.AddDiamonds=false
++        B:Pulverizer.AddDiamonds=true
++        B:Smelter.AddDiamonds=true
+         B:UseGears=true
+     }
+ 
+diff -ru 1.1.0-base/forestry/common.conf 1.1.0-mod/forestry/common.conf
+--- 1.1.0-base/forestry/common.conf	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/forestry/common.conf	2014-03-26 21:31:04.000000000 -0600
+@@ -24,7 +24,7 @@
+ # DIFFICULTY
+ #####################
+ # set to your preferred game mode. available modes are OP, EASY, NORMAL, HARD. mismatch with the server may cause visual glitches with recipes. setting an unavailable mode will create a new mode definition file.
+-difficulty.gamemode=EASY
++difficulty.gamemode=HARD
+ # set to true to force recreation of the game mode definitions in config/forestry/gamemodes
+ difficulty.recreate.definitions=false
+ # set to true to make dungeon loot generated by forestry rarer
+diff -ru 1.1.0-base/machinemuse/andrew/PowersuitsAddons.cfg 1.1.0-mod/machinemuse/andrew/PowersuitsAddons.cfg
+--- 1.1.0-base/machinemuse/andrew/PowersuitsAddons.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/machinemuse/andrew/PowersuitsAddons.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -5,7 +5,7 @@
+ ####################
+ 
+ ""modular powersuits addons"" {
+-    B:"Use Cheaty Leather Recipe (Requires Thermal Expansion)"=true
++    B:"Use Cheaty Leather Recipe (Requires Thermal Expansion)"=false
+     B:"Use Debug mode. WARNING: WILL PROBABLY SPAM YOUR CONSOLE"=false
+     B:"Use Detailed Ore Scanner Message"=true
+     B:"Use HUD for certain modules (Auto Feeder, Torch Placer, Compass, Clock, etc."=true
+diff -ru 1.1.0-base/machinemuse/powersuits.cfg 1.1.0-mod/machinemuse/powersuits.cfg
+--- 1.1.0-base/machinemuse/powersuits.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/machinemuse/powersuits.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -34,8 +34,8 @@
+     D:"Energy per MJ"=1.0
+     D:"Energy per RF"=0.1
+     D:"Energy per UEJ"=1.0
+-    B:"Gregtech Recipes"=false
+-    B:"IndustrialCraft Recipes"=true
++    B:"Gregtech Recipes"=true
++    B:"IndustrialCraft Recipes"=false
+     D:"Maximum Armor per Piece"=6.0
+     D:"Maximum flight speed (in m/s)"=25.0
+     D:"Salvage Ratio"=0.9
+diff -ru 1.1.0-base/powercrystals/minefactoryreloaded/common.cfg 1.1.0-mod/powercrystals/minefactoryreloaded/common.cfg
+--- 1.1.0-base/powercrystals/minefactoryreloaded/common.cfg	2014-03-26 21:02:03.000000000 -0600
++++ 1.1.0-mod/powercrystals/minefactoryreloaded/common.cfg	2014-03-26 21:31:04.000000000 -0600
+@@ -350,10 +350,10 @@
+ 
+ recipesets {
+     # If true, MFR will register its GregTech-based recipes.
+-    B:EnableGregTechRecipes=false
++    B:EnableGregTechRecipes=true
+ 
+     # If true, MFR will register its Thermal Expansion-based recipes.
+-    B:EnableThermalExpansionRecipes=true
++    B:EnableThermalExpansionRecipes=false
+ 
+     # If true, MFR will register its standard (vanilla-item-only) recipes.
+     B:EnableVanillaRecipes=false
+Only in 1.1.0-mod/powercrystals/minefactoryreloaded: common.cfg.orig
