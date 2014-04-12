@@ -12,3 +12,6 @@ TODO:
 - Document what mod versions have been updated
 - Disable RotaryCraft steel with config instead of minetweaker script
 - Include here the extra mods to be downloaded and installed
+
+Changes made directly to server configs without changing my config deploy:
+B:"Allow RC steel to be used in other mods"=false
