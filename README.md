@@ -17,6 +17,9 @@ TODO:
 Changes made directly to server configs without changing my config deploy:
 B:"Allow RC steel to be used in other mods"=false
 
+Removed the easy thermal expansion recipies for ModularPowersuits:
+* \config\machinemuse\recipes\ThermalExpansion.recipes
+
 Added directly to minetweaker/main.cfg:
 # Remove Lilypad of Fertility (too OP when combined with sprinklers)
 # minetweaker.remove(tile.lilypad);
