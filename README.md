@@ -8,13 +8,20 @@ colordiff -rwNu 1.1.0-base 1.1.0-mod | less -R
 diff -ru 1.1.0-base 1.1.0-mod > 1.1.0.patch
 
 TODO:
-- Update the base/patch file to include the new versions of the mods
-- Document what mod versions have been updated
-- Include here the extra mods to be downloaded and installed
+* Update the base/patch file to include the new versions of the mods
+* Document what mod versions have been updated
+* Include here the extra mods to be downloaded and installed
+
+* check the placed block item number for blastfurnace (might be different and
+  why the world check isn't removing it)
+
+Mods to Remove:
+* Magic Crops
+* Portal Gun (maybe)
 
 
-
-Changes made directly to server configs without changing my config deploy:
+Changes made directly to server configs without changing my config deploy
+----------------------------------------------------------------------------
 B:"Allow RC steel to be used in other mods"=false
 
 Removed the easy thermal expansion recipies for ModularPowersuits:
@@ -37,3 +44,23 @@ minetweaker.remove(<30872:45>);
 # rcSteel = item.shaftcraft.crafting.ingot;
 # recipes.addShaped(rcSteel * 4, [[gtSteel, gtSteel], [gtSteel, gtSteel]]);
 recipes.addShaped(<30887:1> * 4, [[<9630:26>, <9630:26>], [<9630:26>, <9630:26>]]);
+
+Changed to using MCPC+ instead of pure forge server. Start.bat changed, perm sized upped to 256:
+"C:\Program Files\Java\jre7\bin\java.exe" -Xms3G -Xmx3G -XX:PermSize=256m -jar mcpc-plus-1.6.4-R2.1-forge965-B251.jar nogui
+
+TekkitCustomizer used to enforce banned items:
+Fertalized Dirt, BlastFurnace, Lilypad
+Bans:
+    CraftingBanned: []
+    OwnershipBanned:
+    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
+    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
+    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+    UsageBanned:
+    - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
+    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
+    PlacementBanned: []
+    WorldBanned:
+    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
+    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
+    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
