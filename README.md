@@ -11,6 +11,7 @@ TODO:
 * Update the base/patch file to include the new versions of the mods
 * Document what mod versions have been updated
 * Include here the extra mods to be downloaded and installed
+* Fix unification targets
 
 * check the placed block item number for blastfurnace (might be different and
   why the world check isn't removing it)
@@ -22,6 +23,12 @@ Mods to Remove:
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
+Removed most of the recipies for the Advanced Solar Panels Molecular
+Transformer, only left the sunarium part recipie
+
+OpenBlocks elevator drains exp = true
+
+
 B:"Allow RC steel to be used in other mods"=false
 
 Removed the easy thermal expansion recipies for ModularPowersuits:
