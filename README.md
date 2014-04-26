@@ -41,8 +41,6 @@ Mods to Remove:
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-B:"Allow RC steel to be used in other mods"=false
-
 Removed the easy thermal expansion recipies for ModularPowersuits:
 * \config\machinemuse\recipes\ThermalExpansion.recipes
 
