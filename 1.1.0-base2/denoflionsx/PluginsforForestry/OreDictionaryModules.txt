@@ -1,3 +1,0 @@
-peat_entries.txt
-juice_entries.txt
-Veggie_Juice_Entries.txt
