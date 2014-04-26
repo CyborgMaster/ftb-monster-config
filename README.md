@@ -4,6 +4,18 @@ ftb-monster-config
 Modifications for Minecraft FTB Monster config files to add gregtech and make it
 as hard as possible
 
+TODO:
+* Fix unification targets
+* check the placed block item number for blastfurnace (might be different and
+  why the world check isn't removing it)
+
+Mods to Remove:
+* Magic Crops (have to do something)
+* Portal Gun (maybe)
+* Tinkers Construct (maybe)
+* Bedrock tools (maybe)
+* Wraith Nodes
+
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
 ``` bash
@@ -27,22 +39,15 @@ Enabled Mods
 * JourneyMap
 * ThaumicTinkerer
 
-TODO:
-* Fix unification targets
-* check the placed block item number for blastfurnace (might be different and
-  why the world check isn't removing it)
-
-Mods to Remove:
-* Magic Crops (have to do something)
-* Portal Gun (maybe)
-* Tinkers Construct (maybe)
-* Bedrock tools (maybe)
-* Wraith Nodes
-
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-Changed to using MCPC+ instead of pure forge server. Start.bat changed, perm sized upped to 256:
-"C:\Program Files\Java\jre7\bin\java.exe" -Xms3G -Xmx3G -XX:PermSize=256m -jar mcpc-plus-1.6.4-R2.1-forge965-B251.jar nogui
+All merged in
+
+
+Server Only Changes
+----------------------------------------------------------------------------
+* Changed to using MCPC+ instead of pure forge server
+* Start.bat changed, perm memory increased to 256
 
 TekkitCustomizer used to enforce banned items:
 Fertalized Dirt, BlastFurnace, Lilypad
