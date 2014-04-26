@@ -41,12 +41,6 @@ Mods to Remove:
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-Removed most of the recipies for the Advanced Solar Panels Molecular
-Transformer, only left the sunarium part recipie
-
-OpenBlocks elevator drains exp = true
-
-
 B:"Allow RC steel to be used in other mods"=false
 
 Removed the easy thermal expansion recipies for ModularPowersuits:
