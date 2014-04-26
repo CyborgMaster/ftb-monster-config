@@ -6,9 +6,11 @@ as hard as possible
 
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
+``` bash
 colordiff -rwNu 1.1.0-base 1.1.0-mod | less -R
 diff -ru 1.1.0-base 1.1.0-mod > 1.1.0.patch
 patch -p1 < ../1.1.0.patch
+```
 
 Added Mods
 ---------------------------------------------------------------------------
