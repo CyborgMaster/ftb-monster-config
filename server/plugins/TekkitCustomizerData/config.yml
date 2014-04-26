@@ -1,0 +1,25 @@
+TekkitCustomizer:
+  ProtectSurfaceFromExplosives: false
+  RemoveUUMatterToNonRenewableItemRecipes: false
+  EnforcementWorlds:
+  - world
+  - DIM20
+  - DIM7
+  - DIM-19
+  - DIM-100
+  - DIM1
+  - DIM-1
+  Bans:
+    CraftingBanned: []
+    OwnershipBanned:
+    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
+    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
+    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+    UsageBanned:
+    - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
+    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
+    PlacementBanned: []
+    WorldBanned:
+    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
+    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
+    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace

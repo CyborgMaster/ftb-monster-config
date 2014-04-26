@@ -43,25 +43,12 @@ Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
 All merged in
 
-
 Server Only Changes
 ----------------------------------------------------------------------------
 * Changed to using MCPC+ instead of pure forge server
 * Start.bat changed, perm memory increased to 256
 
 TekkitCustomizer used to enforce banned items:
-Fertalized Dirt, BlastFurnace, Lilypad
-Bans:
-    CraftingBanned: []
-    OwnershipBanned:
-    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
-    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
-    UsageBanned:
-    - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
-    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
-    PlacementBanned: []
-    WorldBanned:
-    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
-    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+* Fertalized Dirt
+* RC Blast Furnace
+* Lillypad of Fertility
