@@ -7,19 +7,33 @@ command to generate diff file:
 colordiff -rwNu 1.1.0-base 1.1.0-mod | less -R
 diff -ru 1.1.0-base 1.1.0-mod > 1.1.0.patch
 
+Added Mods
+---------------------------------------------------------------------------
+* GregTech: 4.08s
+* Advanced Solar Panel: Version: 3.4.7
+* Gravitation Suite: v1.9.9a
+
+Disabled Mods
+---------------------------------------------------------------------------
+* Compact Solars
+
+Enabled Mods
+---------------------------------------------------------------------------
+* JourneyMap
+* ThaumicTinkerer
+
 TODO:
-* Update the base/patch file to include the new versions of the mods
-* Document what mod versions have been updated
-* Include here the extra mods to be downloaded and installed
 * Fix unification targets
 
 * check the placed block item number for blastfurnace (might be different and
   why the world check isn't removing it)
 
 Mods to Remove:
-* Magic Crops
+* Magic Crops (have to do something)
 * Portal Gun (maybe)
-
+* Tinkers Construct (maybe)
+* Bedrock tools (maybe)
+* Wraith Nodes
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
