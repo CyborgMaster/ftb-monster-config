@@ -7,7 +7,7 @@ as hard as possible
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
 ``` bash
-colordiff -rwNu 1.1.0-base 1.1.0-mod | less -R
+colordiff -ruw 1.1.0-base 1.1.0-mod | less -R
 diff -ru 1.1.0-base 1.1.0-mod > 1.1.0.patch
 patch -p1 < ../1.1.0.patch
 ```
@@ -41,9 +41,6 @@ Mods to Remove:
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-Removed the easy thermal expansion recipies for ModularPowersuits:
-* \config\machinemuse\recipes\ThermalExpansion.recipes
-
 Added directly to minetweaker/main.cfg:
 # Remove Lilypad of Fertility (too OP when combined with sprinklers)
 # minetweaker.remove(tile.lilypad);
