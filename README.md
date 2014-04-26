@@ -7,8 +7,8 @@ as hard as possible
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
 ``` bash
-colordiff -ruw 1.1.0-base 1.1.0-mod | less -R
-diff -ru 1.1.0-base 1.1.0-mod > 1.1.0.patch
+colordiff -ruNw 1.1.0-base 1.1.0-mod | less -R
+diff -ruN 1.1.0-base 1.1.0-mod > 1.1.0.patch
 patch -p1 < ../1.1.0.patch
 ```
 
@@ -41,24 +41,6 @@ Mods to Remove:
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-Added directly to minetweaker/main.cfg:
-# Remove Lilypad of Fertility (too OP when combined with sprinklers)
-# minetweaker.remove(tile.lilypad);
-minetweaker.remove(<1722>);
-
-# Remove Fertalized Dirt, also too OP for growing plants
-minetweaker.remove(<2648>);
-
-# Remove crafting recipie for RotaryCraft blast furnace (Too cheap to get steel, use GT Steel)
-# rcBlastFurnace = item.machineplacer."45";
-minetweaker.remove(<30872:45>);
-
-# Add recipe to convert GregTech steel to RotaryCraft steel
-# gtSteel = item.GT_Materials."26";
-# rcSteel = item.shaftcraft.crafting.ingot;
-# recipes.addShaped(rcSteel * 4, [[gtSteel, gtSteel], [gtSteel, gtSteel]]);
-recipes.addShaped(<30887:1> * 4, [[<9630:26>, <9630:26>], [<9630:26>, <9630:26>]]);
-
 Changed to using MCPC+ instead of pure forge server. Start.bat changed, perm sized upped to 256:
 "C:\Program Files\Java\jre7\bin\java.exe" -Xms3G -Xmx3G -XX:PermSize=256m -jar mcpc-plus-1.6.4-R2.1-forge965-B251.jar nogui
 
