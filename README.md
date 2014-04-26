@@ -38,6 +38,7 @@ Enabled Mods
 ---------------------------------------------------------------------------
 * JourneyMap
 * ThaumicTinkerer
+* Rei's Minimap (used for waypoints)
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
