@@ -48,8 +48,14 @@ Server Only Changes
 ----------------------------------------------------------------------------
 * Changed to using MCPC+ instead of pure forge server
 * Start.bat changed, perm memory increased to 256
-* Added Dynmap mod to mods folder
-* Added Tekkit Customizer to plugins folder
+
+Added Server Mods:
+* Dynmap
+
+Added Server Plugins:
+* Tekkit Customizer
+* World Guard
+* World Edit
 
 TekkitCustomizer used to enforce banned items:
 * Fertalized Dirt
