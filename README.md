@@ -16,6 +16,17 @@ Mods to Remove:
 * Bedrock tools (maybe)
 * Wraith Nodes
 
+To Remove:
+--------------------------------------------------------------------------
+* Pink Generator
+* Culinary Generator
+* Furnace Generator
+* Ender Generator
+* Look at lova generators
+* EnderIO Photovoltaic Cells
+* Lumber Axe
+* Bedrock Axe (possibly add iridium to make it more expensive)
+
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
 ``` bash
@@ -42,7 +53,9 @@ Enabled Mods
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-All merged in
+* Set Mariculture Titanium Bucket id to 0
+  `I:"Titanium Bucket"=0`
+
 
 Server Only Changes
 ----------------------------------------------------------------------------
