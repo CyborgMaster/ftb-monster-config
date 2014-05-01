@@ -5,16 +5,10 @@ Modifications for Minecraft FTB Monster config files to add gregtech and make it
 as hard as possible
 
 TODO:
-* Fix unification targets
+* Have AppliedEngeristics use the BC Assembly Table
+* Fix GregTech kunification targets
 * check the placed block item number for blastfurnace (might be different and
   why the world check isn't removing it)
-
-Mods to Remove:
-* Magic Crops (have to do something)
-* Portal Gun (maybe)
-* Tinkers Construct (maybe)
-* Bedrock tools (maybe)
-* Wraith Nodes
 
 To Remove:
 --------------------------------------------------------------------------
@@ -34,6 +28,14 @@ colordiff -ruNw 1.1.0-base 1.1.0-mod | less -R
 diff -ruN 1.1.0-base 1.1.0-mod > 1.1.0.patch
 patch -p1 < ../1.1.0.patch
 ```
+
+Mods to Remove
+---------------------------------------------------------------------------
+* Magic Crops (have to do something)
+* Portal Gun (maybe)
+* Tinkers Construct (maybe)
+* Bedrock tools (maybe)
+* Wraith Nodes
 
 Added Mods
 ---------------------------------------------------------------------------
