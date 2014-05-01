@@ -12,14 +12,18 @@ TekkitCustomizer:
   Bans:
     CraftingBanned: []
     OwnershipBanned:
-    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
     - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+    - 30872:75:RC Worktable:Not needed, use a normal crafting table
     UsageBanned:
     - 27585:2:Divining Rod III:Makes mining trivial, undermining the server economy.
-    - 27526:*:Philosopher's Stone:Bypasses anti-grief to change blocks in protected areas without permission.
+    - 27526:*:Philosophers Stone:Bypasses anti-grief to change blocks in protected areas without permission.
     PlacementBanned: []
     WorldBanned:
-    - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-    - 2648:*:Fertalized Dirt:Too OP when combined with magic crops
-    - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+    - 3721:2:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+    - 3721:6:RC Worktable:Not needed, use a normal crafting table
+    - 2529:1:Furnace Generator:OP Power Generation
+    - 2529:3:Ender Generator:OP Power Generation
+    - 2529:4:Heated Redstone Generator:OP Power Generation
+    - 2529:5:Culinary Generator:OP Power Generation
+    - 2529:9:Pink Generator:OP Power Generation
+    - 2529:10:High Temperature Furnace Generator:OP Power Generation
