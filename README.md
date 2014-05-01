@@ -5,22 +5,12 @@ Modifications for Minecraft FTB Monster config files to add gregtech and make it
 as hard as possible
 
 TODO:
-* Have AppliedEngeristics use the BC Assembly Table
-* check the placed block item number for blastfurnace (might be different and
-  why the world check isn't removing it)
+--------------------------------------------------------------------------
 * Fix GregTech unification targets
 
 To Remove:
 --------------------------------------------------------------------------
-* Pink Generator
-* Culinary Generator
-* Furnace Generator
-* Ender Generator
-* Look at lova generators
-* EnderIO Photovoltaic Cells
-* Lumber Axe
-* Titanium Bucket
-* Bedrock Axe (possibly add iridium to make it more expensive)
+None
 
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
@@ -56,9 +46,7 @@ Enabled Mods
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-* Set Mariculture Titanium Bucket id to 0
-  `I:"Titanium Bucket"=0`
-
+All Merged
 
 Server Only Changes
 ----------------------------------------------------------------------------
@@ -72,8 +60,3 @@ Added Server Plugins:
 * Tekkit Customizer
 * World Guard
 * World Edit
-
-TekkitCustomizer used to enforce banned items:
-* Fertalized Dirt
-* RC Blast Furnace
-* Lillypad of Fertility
