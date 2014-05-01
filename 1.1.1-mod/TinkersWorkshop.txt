@@ -340,7 +340,7 @@ tools {
     I:Hoe=31691
     I:Longbow=14062
     I:Longsword=14056
-    I:"Lumber Axe"=14061
+    I:"Lumber Axe"=0
     I:Mattock=14060
     I:Pickaxe=14051
     I:"Potion Launcher"=14064
