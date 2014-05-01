@@ -6,9 +6,9 @@ as hard as possible
 
 TODO:
 * Have AppliedEngeristics use the BC Assembly Table
-* Fix GregTech kunification targets
 * check the placed block item number for blastfurnace (might be different and
   why the world check isn't removing it)
+* Fix GregTech unification targets
 
 To Remove:
 --------------------------------------------------------------------------
@@ -19,6 +19,7 @@ To Remove:
 * Look at lova generators
 * EnderIO Photovoltaic Cells
 * Lumber Axe
+* Titanium Bucket
 * Bedrock Axe (possibly add iridium to make it more expensive)
 
 Commands to generate and apply diff file
