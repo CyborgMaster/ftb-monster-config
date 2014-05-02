@@ -555,14 +555,17 @@ diff -ruN 1.1.1-base/mariculture/ids.cfg 1.1.1-mod/mariculture/ids.cfg
  }
 diff -ruN 1.1.1-base/minetweaker/main.cfg 1.1.1-mod/minetweaker/main.cfg
 --- 1.1.1-base/minetweaker/main.cfg	2014-04-26 14:09:20.000000000 -0600
-+++ 1.1.1-mod/minetweaker/main.cfg	2014-05-01 15:50:08.000000000 -0600
-@@ -8,4 +8,45 @@
++++ 1.1.1-mod/minetweaker/main.cfg	2014-05-01 18:10:41.000000000 -0600
+@@ -8,4 +8,48 @@
  
  # Add your commands here
  
 -include "RecipeFixesMonster.cfg";
 \ No newline at end of file
 +include "RecipeFixesMonster.cfg";
++
++# Remove Lilypad of Fertility (too OP when combined with sprinklers)
++minetweaker.remove(<1722>);
 +
 +# Remove crafting recipie for RotaryCraft blast furnace (Too cheap to get steel, use GT Steel)
 +minetweaker.remove(<30872:45>);
@@ -620,15 +623,3 @@ diff -ruN 1.1.1-base/powercrystals/minefactoryreloaded/common.cfg 1.1.1-mod/powe
  
      # If true, MFR will register its standard (vanilla-item-only) recipes.
      B:EnableVanillaRecipes=false
-diff -ruN 1.1.1-base/xreliquary.cfg 1.1.1-mod/xreliquary.cfg
---- 1.1.1-base/xreliquary.cfg	2014-04-26 14:09:20.000000000 -0600
-+++ 1.1.1-mod/xreliquary.cfg	2014-05-01 14:26:37.000000000 -0600
-@@ -7,7 +7,7 @@
- block {
-     I:AltarActive=1720
-     I:AltarIdle=1721
--    I:Lilypad=1722
-+    I:Lilypad=0
-     I:WraithNode=1723
- }
- 
