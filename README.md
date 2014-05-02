@@ -10,7 +10,7 @@ TODO:
 
 To Remove:
 --------------------------------------------------------------------------
-None
+* Diamond Dolly - crashes when trying to put down barrel
 
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
