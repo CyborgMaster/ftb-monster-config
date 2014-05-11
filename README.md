@@ -6,11 +6,19 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
+* Remove /back server command
+* Remove Titanium Bucket with bans instead of 0 (makes a shovel)
+* Remove Tinker's Construct tools with bans (makes a shovel)
+* have recipie for iridium tools include proper nbt data
 * Fix GregTech unification targets
 
 To Remove:
 --------------------------------------------------------------------------
 * Diamond Dolly - crashes when trying to put down barrel
+* Ability to make ederium with the induction smelter (then you need an
+  upgraded blast furnace to get it)
+* Essence seeds - or at least the way to get them from grass
+* Rainbow trees - maybe (too many golden apples)
 
 Commands to generate and apply diff file
 --------------------------------------------------------------------------
@@ -46,7 +54,10 @@ Enabled Mods
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-All Merged
+* Big Reactors changed to require steel and obsidian
+    B:requireObsidianGlass=true
+    B:requireSteelInsteadOfIron=true
+
 
 Server Only Changes
 ----------------------------------------------------------------------------
