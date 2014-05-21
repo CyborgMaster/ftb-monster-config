@@ -11,6 +11,7 @@ TODO:
 * Remove Tinker's Construct tools with bans (makes a shovel)
 * have recipie for iridium tools include proper nbt data
 * Fix GregTech unification targets
+* Add iridium to extractor recipie
 
 To Remove:
 --------------------------------------------------------------------------
@@ -57,6 +58,7 @@ Changes made directly to server configs without changing my config deploy
 * Big Reactors changed to require steel and obsidian
     B:requireObsidianGlass=true
     B:requireSteelInsteadOfIron=true
+* Turn on AE Spacial Storage
 
 
 Server Only Changes
