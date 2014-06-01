@@ -61,7 +61,7 @@ diff -ruN 1.1.1-base/AdvancedSolarPanel_MTRecipes.cfg 1.1.1-mod/AdvancedSolarPan
 +#ID:266;OD:ingotPlatinum;1;1;9000000 # goldIngot -> platinumIngot
 diff -ruN 1.1.1-base/AppliedEnergistics.cfg 1.1.1-mod/AppliedEnergistics.cfg
 --- 1.1.1-base/AppliedEnergistics.cfg	2014-04-26 14:09:20.000000000 -0600
-+++ 1.1.1-mod/AppliedEnergistics.cfg	2014-05-01 14:30:18.000000000 -0600
++++ 1.1.1-mod/AppliedEnergistics.cfg	2014-05-31 22:15:39.000000000 -0600
 @@ -22,7 +22,7 @@
      ####################
  
@@ -71,6 +71,65 @@ diff -ruN 1.1.1-base/AppliedEnergistics.cfg 1.1.1-mod/AppliedEnergistics.cfg
          B:enableBCtoMEChipRecipe=false
          B:useBuildcraftChips=false
      }
+@@ -96,7 +96,7 @@
+     B:enableQNB=true
+     B:enableQuartzTools=true
+     B:enableSpaceClickMoving=true
+-    B:enableSpatial=false
++    B:enableSpatial=true
+     B:enableStorageBus=true
+     B:enableStorageMonitor=true
+     B:enableStorageMonitorConvMatrix=true
+diff -ruN 1.1.1-base/BigReactors/BigReactors.cfg 1.1.1-mod/BigReactors/BigReactors.cfg
+--- 1.1.1-base/BigReactors/BigReactors.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/BigReactors/BigReactors.cfg	2014-05-31 22:13:27.000000000 -0600
+@@ -69,10 +69,10 @@
+     B:registerCoalForSmelting=true
+     B:registerGraphiteCharcoalCraftingRecipes=false
+     B:registerGraphiteCoalCraftingRecipes=false
+-    B:registerYelloriteSmeltToUranium=true
+-    B:registerYelloriumAsUranium=true
+-    B:requireObsidianGlass=false
+-    B:requireSteelInsteadOfIron=false
++    B:registerYelloriteSmeltToUranium=false
++    B:registerYelloriumAsUranium=false
++    B:requireObsidianGlass=true
++    B:requireSteelInsteadOfIron=true
+ }
+ 
+ 
+diff -ruN 1.1.1-base/GregTech/Unification.cfg 1.1.1-mod/GregTech/Unification.cfg
+--- 1.1.1-base/GregTech/Unification.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/GregTech/Unification.cfg	2014-05-31 22:21:46.000000000 -0600
+@@ -60,7 +60,7 @@
+         B:ingotBronze_false=false
+         B:ingotCopper_false=false
+         B:ingotLead_false=false
+-        B:ingotRubber_false=false
++        B:ingotRubber_false=true
+         B:ingotSilver_false=false
+         B:ingotTin_false=false
+         B:oreUranium_false=false
+@@ -4026,7 +4026,7 @@
+         B:dustEnderPearl_false=false
+         B:dustGold_false=false
+         B:dustIron_false=false
+-        B:dustNetherQuartz_false=false
++        B:dustNetherQuartz_false=true
+         B:dustWheat_false=false
+         B:gemCertusQuartz_false=false
+         B:oreCertusQuartz_false=false
+@@ -4054,8 +4054,8 @@
+     ####################
+ 
+     mimicry {
+-        B:gemMimichite_false=false
+-        B:oreMimichite_false=false
++        B:gemMimichite_false=true
++        B:oreMimichite_false=true
+     }
+ 
+     ####################
 diff -ruN 1.1.1-base/IguanaTweaksTConstruct.cfg 1.1.1-mod/IguanaTweaksTConstruct.cfg
 --- 1.1.1-base/IguanaTweaksTConstruct.cfg	2014-04-26 14:09:20.000000000 -0600
 +++ 1.1.1-mod/IguanaTweaksTConstruct.cfg	2014-04-26 14:25:37.000000000 -0600
