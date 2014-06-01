@@ -1,0 +1,609 @@
+diff -ruN 1.1.1-base/AdvancedSolarPanel.cfg 1.1.1-mod/AdvancedSolarPanel.cfg
+--- 1.1.1-base/AdvancedSolarPanel.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/AdvancedSolarPanel.cfg	2014-04-26 14:29:31.000000000 -0600
+@@ -5,8 +5,8 @@
+ ####################
+ 
+ block {
+-    I:MolecularTransformerID=195
+-    I:blockID=194
++    I:MolecularTransformerID=1999
++    I:blockID=2000
+ }
+ 
+ 
+diff -ruN 1.1.1-base/AdvancedSolarPanel_MTRecipes.cfg 1.1.1-mod/AdvancedSolarPanel_MTRecipes.cfg
+--- 1.1.1-base/AdvancedSolarPanel_MTRecipes.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/AdvancedSolarPanel_MTRecipes.cfg	2014-04-26 14:31:36.000000000 -0600
+@@ -9,24 +9,24 @@
+ ##################################################################################################
+ version=1
+ ##################################################################################################
+-ID:397-1;ID:399;1;1;120000000 # Item.skull -> Item.netherStar
+-ID:265;IC:iridiumOre;1;1;9000000 # Iron ingot -> iridium ore
+-ID:87;ID:289;1;1;70000 # Block.netherrack -> Item.gunpowder
+-ID:12;ID:13;1;1;50000 # Block.sand -> Block.gravel
+-ID:3;ID:82;1;1;50000 # Block.dirt -> Block.blockClay
+-ID:263-1;ID:263;1;1;60000 # Charcoal -> Coal
++#ID:397-1;ID:399;1;1;120000000 # Item.skull -> Item.netherStar
++#ID:265;IC:iridiumOre;1;1;9000000 # Iron ingot -> iridium ore
++#ID:87;ID:289;1;1;70000 # Block.netherrack -> Item.gunpowder
++#ID:12;ID:13;1;1;50000 # Block.sand -> Block.gravel
++#ID:3;ID:82;1;1;50000 # Block.dirt -> Block.blockClay
++#ID:263-1;ID:263;1;1;60000 # Charcoal -> Coal
+ ID:348;OD:sunnariumPart;1;1;1000000 # glowstoneDust -> sunnariumPart
+ ID:89;OD:sunnarium;1;1;9000000 # glowstone -> sunnarium
+-ID:35-4;ID:89;1;1;750000 # yellow wool -> glowstone
+-ID:35-11;ID:22;1;1;1000000 # blue wool -> Block.blockLapis
+-ID:35-14;ID:152;1;1;1000000 # red wool -> Block.blockRedstone
+-ID:351-4;OD:gemSapphire;1;1;5000000 # lapis lazuli -> sapphire
+-ID:331;OD:gemRuby;1;1;5000000 # Item.redstone -> ruby
+-ID:263;OD:craftingIndustrialDiamond;1;1;9000000 # coal -> industrial diamond
+-OD:dustTitanium;OD:dustChrome;1;1;500000
+-OD:ingotTitanium;OD:ingotChrome;1;1;500000
+-OD:gemNetherQuartz;OD:gemCertusQuartz;1;1;1000000
+-OD:ingotCopper;OD:ingotNickel;1;1;300000
+-OD:ingotTin;OD:ingotSilver;1;1;1000000
+-OD:ingotSilver;ID:266;1;1;2000000 # silverIngot -> goldIngot
+-ID:266;OD:ingotPlatinum;1;1;9000000 # goldIngot -> platinumIngot
++#ID:35-4;ID:89;1;1;750000 # yellow wool -> glowstone
++#ID:35-11;ID:22;1;1;1000000 # blue wool -> Block.blockLapis
++#ID:35-14;ID:152;1;1;1000000 # red wool -> Block.blockRedstone
++#ID:351-4;OD:gemSapphire;1;1;5000000 # lapis lazuli -> sapphire
++#ID:331;OD:gemRuby;1;1;5000000 # Item.redstone -> ruby
++#ID:263;OD:craftingIndustrialDiamond;1;1;9000000 # coal -> industrial diamond
++#OD:dustTitanium;OD:dustChrome;1;1;500000
++#OD:ingotTitanium;OD:ingotChrome;1;1;500000
++#OD:gemNetherQuartz;OD:gemCertusQuartz;1;1;1000000
++#OD:ingotCopper;OD:ingotNickel;1;1;300000
++#OD:ingotTin;OD:ingotSilver;1;1;1000000
++#OD:ingotSilver;ID:266;1;1;2000000 # silverIngot -> goldIngot
++#ID:266;OD:ingotPlatinum;1;1;9000000 # goldIngot -> platinumIngot
+diff -ruN 1.1.1-base/AppliedEnergistics.cfg 1.1.1-mod/AppliedEnergistics.cfg
+--- 1.1.1-base/AppliedEnergistics.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/AppliedEnergistics.cfg	2014-05-01 14:30:18.000000000 -0600
+@@ -22,7 +22,7 @@
+     ####################
+ 
+     bcintegration {
+-        B:assemblyTableOnly=false
++        B:assemblyTableOnly=true
+         B:enableBCtoMEChipRecipe=false
+         B:useBuildcraftChips=false
+     }
+diff -ruN 1.1.1-base/IguanaTweaksTConstruct.cfg 1.1.1-mod/IguanaTweaksTConstruct.cfg
+--- 1.1.1-base/IguanaTweaksTConstruct.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/IguanaTweaksTConstruct.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -8,19 +8,19 @@
+ 
+ crafting {
+     # Allows blank patterns to be crafted with 4 sticks in a square
+-    B:easyBlankPatternRecipe=true
++    B:easyBlankPatternRecipe=false
+ 
+     # Allows you to make tool parts in a normal crafting window
+-    B:easyPartCrafting=true
++    B:easyPartCrafting=false
+ 
+     # Allows you to rotate the the tier 1 patterns in a normal crafting window
+-    B:easyPatternCrafting=true
++    B:easyPatternCrafting=false
+ 
+     # Allows you create tinkers tools in a normal crafting window
+-    B:easyToolCreation=true
++    B:easyToolCreation=false
+ 
+     # Allows you add modifications to tools in a normal crafting window
+-    B:easyToolModification=true
++    B:easyToolModification=false
+ }
+ 
+ 
+@@ -205,11 +205,11 @@
+ 
+     # Change durability of all materials here (higher = tougher)
+     I:durabilityPercentage=100
+-    B:easyBlankPatternRecipe=true
+-    B:easyPartCrafting=true
+-    B:easyPatternCrafting=true
+-    B:easyToolCreation=true
+-    B:easyToolModification=true
++    B:easyBlankPatternRecipe=false
++    B:easyPartCrafting=false
++    B:easyPatternCrafting=false
++    B:easyToolCreation=false
++    B:easyToolModification=false
+ 
+     # Change mining speed of all materials here (higher = faster)
+     I:miningSpeedPercentage=100
+diff -ruN 1.1.1-base/InvTweaks.cfg 1.1.1-mod/InvTweaks.cfg
+--- 1.1.1-base/InvTweaks.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/InvTweaks.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -8,10 +8,10 @@
+ autoRefillBeforeBreak=false
+ autoRefillDamageThreshhold=5
+ enableSounds=true
+-enableShortcuts=true
++enableShortcuts=false
+ enableAutoEquipArmor=false
+ enableServerItemSwap=true
+-keySortInventory=R
++keySortInventory=BACKSLASH
+ shortcutKeyAllItems=LCONTROL+LSHIFT, RCONTROL+RSHIFT
+ shortcutKeyEverything=SPACE
+ shortcutKeyOneItem=LCONTROL, RCONTROL
+diff -ruN 1.1.1-base/OpenBlocks.cfg 1.1.1-mod/OpenBlocks.cfg
+--- 1.1.1-base/OpenBlocks.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/OpenBlocks.cfg	2014-04-26 14:44:59.000000000 -0600
+@@ -199,7 +199,7 @@
+ 
+ dropblock {
+     # Does the elevator drain player XP when used?
+-    B:elevatorDrainsXP=false
++    B:elevatorDrainsXP=true
+ 
+     # The elevator will ignore half blocks when counting the blocks it can pass through
+     B:ignoreHalfBlocks=false
+diff -ruN 1.1.1-base/QuarryPlus.cfg 1.1.1-mod/QuarryPlus.cfg
+--- 1.1.1-base/QuarryPlus.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/QuarryPlus.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -24,7 +24,7 @@
+ 
+ general {
+     # 0:AsCheatRecipe,1:EasyRecipe,2:NormalRecipe(Default),3:HardRecipe,other:NormalRecipe
+-    I:RecipeDifficulty=2
++    I:RecipeDifficulty=3
+     ####################
+     # PowerSetting
+     ####################
+diff -ruN 1.1.1-base/RandomThings.cfg 1.1.1-mod/RandomThings.cfg
+--- 1.1.1-base/RandomThings.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/RandomThings.cfg	2014-05-01 13:53:11.000000000 -0600
+@@ -11,7 +11,7 @@
+     I:"Block Teleporter"=2655
+     I:"Ender Porter"=2646
+     I:"Entity Detector"=2647
+-    I:"Fertilized Dirt"=2648
++    I:"Fertilized Dirt"=0
+     I:"Fluid Display"=2649
+     I:"Imbuing Station"=2656
+     I:"Inventory Interface"=2650
+diff -ruN 1.1.1-base/Reika/RotaryCraft.cfg 1.1.1-mod/Reika/RotaryCraft.cfg
+--- 1.1.1-base/Reika/RotaryCraft.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/Reika/RotaryCraft.cfg	2014-05-01 14:24:54.000000000 -0600
+@@ -67,7 +67,7 @@
+     B:"Allow Build Blocking of Some Machines"=false
+     B:"Allow Craftable Bedrock"=true
+     B:"Allow Gravel Gun PvP"=true
+-    B:"Allow RC steel to be used in other mods"=true
++    B:"Allow RC steel to be used in other mods"=false
+     I:"Bait Box Range"=128
+     B:"Block Damage from Destructive Machines"=true
+     I:"Block Ram Range"=512
+@@ -77,7 +77,7 @@
+     B:"Color Blind Mode"=false
+     B:"Conservative Jetpack Firing"=true
+     B:"Console Loading Info"=true
+-    B:"Crafting Table can Make Machines"=false
++    B:"Crafting Table can Make Machines"=true
+     B:"Crash on hostile interference from other mods"=false
+     B:"Debug Mode"=false
+     I:"Difficulty Control"=2
+diff -ruN 1.1.1-base/Sync.cfg 1.1.1-mod/Sync.cfg
+--- 1.1.1-base/Sync.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/Sync.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -45,7 +45,7 @@
+     # 0 = No
+     # 1 = Yes
+     # 2 = Yes, but only on actual Hardcore mode.
+-    I:hardcoreMode=2
++    I:hardcoreMode=1
+ 
+     # Allow overriding the death of a player if the player has other shells?
+     # The player will resync to the nearest shell.
+diff -ruN 1.1.1-base/TinkersWorkshop.txt 1.1.1-mod/TinkersWorkshop.txt
+--- 1.1.1-base/TinkersWorkshop.txt	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/TinkersWorkshop.txt	2014-05-31 18:52:38.000000000 -0600
+@@ -267,7 +267,7 @@
+     I:"Bronze ingot return"=4
+ 
+     # Number of ingots returned from smelting ores in the smeltery
+-    I:"Ingots per ore"=2
++    I:"Ingots per ore"=1
+ 
+     # Number of ingots returned from smelting Manyullyn in the smeltery
+     I:"Manyullyn ingot return"=1
+diff -ruN 1.1.1-base/cofh/ThermalExpansion.cfg 1.1.1-mod/cofh/ThermalExpansion.cfg
+--- 1.1.1-base/cofh/ThermalExpansion.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/cofh/ThermalExpansion.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -265,9 +265,9 @@
+     ####################
+ 
+     crafting {
+-        B:Crucible.AllowRecipeOverwrite=false
+-        B:Furnace.AllowRecipeOverwrite=false
+-        B:Pulverizer.AllowRecipeOverwrite=false
++        B:Crucible.AllowRecipeOverwrite=true
++        B:Furnace.AllowRecipeOverwrite=true
++        B:Pulverizer.AllowRecipeOverwrite=true
+         B:Pulverizer.BlazeRod=true
+         B:Pulverizer.BlizzRod=true
+         B:Pulverizer.Bone=true
+@@ -285,8 +285,8 @@
+         I:RockGen.Stone.Lava=0
+         I:RockGen.Stone.Time=80
+         I:RockGen.Stone.Water=1000
+-        B:Sawmill.AllowRecipeOverwrite=false
+-        B:Smelter.AllowRecipeOverwrite=false
++        B:Sawmill.AllowRecipeOverwrite=true
++        B:Smelter.AllowRecipeOverwrite=true
+         B:Smelter.Steel.Enable=true
+         B:Transposer.AllowRecipeOverwrite=false
+     }
+@@ -296,15 +296,15 @@
+     ####################
+ 
+     recipe {
+-        B:Breaker.UseDiamondPickaxe=false
++        B:Breaker.UseDiamondPickaxe=true
+         B:MachineFrame.AllowSteel=true
+-        B:MachineFrame.RequireSteel=false
++        B:MachineFrame.RequireSteel=true
+         B:PneumaticServo.AllowBronze=false
+         B:PneumaticServo.AllowInvar=false
+         B:PneumaticServo.AllowSilver=false
+         B:PneumaticServo.AllowSteel=true
+-        B:Pulverizer.AddDiamonds=false
+-        B:Smelter.AddDiamonds=false
++        B:Pulverizer.AddDiamonds=true
++        B:Smelter.AddDiamonds=true
+         B:UseGears=true
+     }
+ 
+diff -ruN 1.1.1-base/enderio/EnderIO.cfg 1.1.1-mod/enderio/EnderIO.cfg
+--- 1.1.1-base/enderio/EnderIO.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/enderio/EnderIO.cfg	2014-05-01 14:42:44.000000000 -0600
+@@ -114,7 +114,7 @@
+     B:perInterfacePowerTrackingEnabled=false
+ 
+     # If set to false Photovoltaic Cells will not be craftable.
+-    B:photovoltaicCellEnabled=true
++    B:photovoltaicCellEnabled=false
+ 
+     # The cost in MJ of trasporting a bucket of fluid via a Dimensional Transceiver.
+     D:transceiverBucketTransmissionCost=1.0
+diff -ruN 1.1.1-base/forestry/common.conf 1.1.1-mod/forestry/common.conf
+--- 1.1.1-base/forestry/common.conf	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/forestry/common.conf	2014-04-26 14:25:37.000000000 -0600
+@@ -24,7 +24,7 @@
+ # DIFFICULTY
+ #####################
+ # set to your preferred game mode. available modes are OP, EASY, NORMAL, HARD. mismatch with the server may cause visual glitches with recipes. setting an unavailable mode will create a new mode definition file.
+-difficulty.gamemode=EASY
++difficulty.gamemode=HARD
+ # set to true to force recreation of the game mode definitions in config/forestry/gamemodes
+ difficulty.recreate.definitions=false
+ # set to true to make dungeon loot generated by forestry rarer
+diff -ruN 1.1.1-base/machinemuse/andrew/PowersuitsAddons.cfg 1.1.1-mod/machinemuse/andrew/PowersuitsAddons.cfg
+--- 1.1.1-base/machinemuse/andrew/PowersuitsAddons.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/machinemuse/andrew/PowersuitsAddons.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -5,7 +5,7 @@
+ ####################
+ 
+ ""modular powersuits addons"" {
+-    B:"Use Cheaty Leather Recipe (Requires Thermal Expansion)"=true
++    B:"Use Cheaty Leather Recipe (Requires Thermal Expansion)"=false
+     B:"Use Debug mode. WARNING: WILL PROBABLY SPAM YOUR CONSOLE"=false
+     B:"Use Detailed Ore Scanner Message"=true
+     B:"Use HUD for certain modules (Auto Feeder, Torch Placer, Compass, Clock, etc."=true
+diff -ruN 1.1.1-base/machinemuse/powersuits.cfg 1.1.1-mod/machinemuse/powersuits.cfg
+--- 1.1.1-base/machinemuse/powersuits.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/machinemuse/powersuits.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -34,8 +34,8 @@
+     D:"Energy per MJ"=1.0
+     D:"Energy per RF"=0.1
+     D:"Energy per UEJ"=1.0
+-    B:"Gregtech Recipes"=false
+-    B:"IndustrialCraft Recipes"=true
++    B:"Gregtech Recipes"=true
++    B:"IndustrialCraft Recipes"=false
+     D:"Maximum Armor per Piece"=6.0
+     D:"Maximum flight speed (in m/s)"=25.0
+     D:"Salvage Ratio"=0.9
+diff -ruN 1.1.1-base/machinemuse/recipes/ThermalExpansion.recipes 1.1.1-mod/machinemuse/recipes/ThermalExpansion.recipes
+--- 1.1.1-base/machinemuse/recipes/ThermalExpansion.recipes	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/machinemuse/recipes/ThermalExpansion.recipes	1969-12-31 17:00:00.000000000 -0700
+@@ -1,217 +0,0 @@
+-[
+-	{
+-		"ingredients" : [
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ { "oredictName" : "gearTin" }, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentPlatingBasic"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "unlocalizedName" : "item.diamond" }, { "unlocalizedName" : "item.diamond" } ],
+-			[ { "oredictName" : "gearInvar" }, { "unlocalizedName" : "item.diamond" } ],
+-			[ { "unlocalizedName" : "item.diamond" }, { "unlocalizedName" : "item.diamond" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentPlatingAdvanced"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "ingotElectrum" }, { "unlocalizedName" : "item.yellowDust" }, { "oredictName" : "componentWiring" } ],
+-			[ { "unlocalizedName" : "item.redstone" }, { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.yellowDust" } ],
+-			[ { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.redstone" }, { "oredictName" : "ingotElectrum" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentControlCircuit"
+-		},
+-		"mirror" : true
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "componentPlatingBasic" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.ingotIron",
+-			"quantity" : 5
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "componentPlatingAdvanced" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.diamond",
+-			"quantity" : 5
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "dyeRed" }, { "oredictName" : "dyeGreen" }, { "oredictName" : "dyeBlue" } ],
+-			[ null, { "unlocalizedName" : "tile.glass" }, null ],
+-			[ { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.thermalexpansion.material.powerCoilGold" }, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentLaserEmitter"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ null, { "unlocalizedName" : "item.emerald" }, null ],
+-			[ { "oredictName" : "ingotElectrum" }, { "unlocalizedName" : "item.thermalexpansion.component.machineFrame" }, { "oredictName" : "ingotElectrum" } ],
+-			[ null, { "unlocalizedName" : "item.thermalexpansion.material.powerCoilSilver" }, null ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "tile.tinkerTable"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ { "oredictName" : "componentWiring" }, null, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.powerArmorHelmet"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "unlocalizedName" : "item.ingotIron" }, null, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.ingotIron" }, { "oredictName" : "componentWiring" } ],
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.powerArmorChestplate"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" }, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ { "oredictName" : "componentWiring" }, null, { "oredictName" : "componentWiring" } ],
+-			[ { "unlocalizedName" : "item.ingotIron" }, null, { "unlocalizedName" : "item.ingotIron" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.powerArmorLeggings"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "componentWiring" }, null, { "oredictName" : "componentWiring" } ],
+-			[ { "unlocalizedName" : "item.ingotIron" }, null, { "unlocalizedName" : "item.ingotIron" } ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.powerArmorBoots"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ null, { "unlocalizedName" : "item.ingotIron" }, null ],
+-			[ { "unlocalizedName" : "item.ingotIron" }, { "oredictName" : "ingotElectrum" }, { "unlocalizedName" : "item.ingotIron" } ],
+-			[ null, { "oredictName" : "componentWiring" }, null ]
+-		],
+-		"result" : {
+-			"unlocalizedName" : "item.powerFist"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[ { "oredictName" : "ingotCopper" }, { "oredictName" : "ingotCopper" }, { "oredictName" : "ingotCopper" } ],
+-			[ { "oredictName" : "ingotSilver" }, { "oredictName" : "ingotSilver" }, { "oredictName" : "ingotSilver" } ],
+-			[ { "oredictName" : "ingotCopper" }, { "oredictName" : "ingotCopper" }, { "oredictName" : "ingotCopper" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentWiring",
+-			"quantity" : 8
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  { "id" : 35 }, { "id" : 35 }, { "id" : 35 } ],
+-			[  { "unlocalizedName" : "item.string" }, null, { "unlocalizedName" : "item.string" } ],
+-			[ null, { "unlocalizedName" : "item.thermalexpansion.material.pneumaticServo" }, null ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentParachute"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  { "oredictName" : "ingotSilver" }, { "unlocalizedName" : "item.paper" }, { "unlocalizedName" : "item.ingotGold" } ],
+-			[  { "oredictName" : "componentWiring" }, null, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentLVCapacitor"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.thermalexpansion.component.conduitEnergyReinforcedEmpty" }, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentMVCapacitor"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.thermalexpansion.component.cellReinforcedFrameFull" }, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentHVCapacitor"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.ingotIron" }, { "oredictName" : "componentWiring" } ],
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.ingotIron" }, { "oredictName" : "componentWiring" } ],
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.ingotIron" }, { "oredictName" : "componentWiring" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentSolenoid"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  null, { "oredictName" : "glassHardened" }, { "oredictName" : "glassHardened" } ],
+-			[  { "oredictName" : "glassHardened" }, { "oredictName" : "glassHardened" }, { "oredictName" : "componentSolenoid" } ],
+-			[  { "oredictName" : "glassHardened" }, null, null ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentGliderWing"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  null, { "oredictName" : "componentSolenoid" }, null ],
+-			[  { "oredictName" : "componentWiring" }, { "unlocalizedName" : "item.thermalexpansion.material.pneumaticServo" }, { "oredictName" : "componentWiring" } ],
+-			[  null, { "oredictName" : "componentSolenoid" }, null ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentServo"
+-		}
+-	},
+-	{
+-		"ingredients" : [
+-			[  null, { "oredictName" : "componentWiring" }, null ],
+-			[  { "oredictName" : "componentSolenoid" }, { "unlocalizedName" : "item.thermalexpansion.component.tesseractFrameFull" }, { "oredictName" : "componentSolenoid" } ],
+-			[  null, { "oredictName" : "componentWiring" }, null ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentFieldEmitter"
+-		},
+-		"mirror" : true
+-	},
+-	{
+-		"ingredients" : [
+-			[  null, { "oredictName" : "componentFieldEmitter" }, { "oredictName" : "ingotInvar" } ],
+-			[  { "oredictName" : "ingotInvar" }, { "unlocalizedName" : "item.yellowDust" }, null],
+-			[  { "oredictName" : "componentWiring" }, { "oredictName" : "componentFieldEmitter" }, { "oredictName" : "ingotInvar" } ]
+-		],
+-		"result" : {
+-			"oredictName" : "componentIonThruster"
+-		}
+-
+-	}
+-]
+\ No newline at end of file
+diff -ruN 1.1.1-base/minetweaker/main.cfg 1.1.1-mod/minetweaker/main.cfg
+--- 1.1.1-base/minetweaker/main.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/minetweaker/main.cfg	2014-05-31 20:23:44.000000000 -0600
+@@ -8,4 +8,53 @@
+ 
+ # Add your commands here
+ 
+-include "RecipeFixesMonster.cfg";
+\ No newline at end of file
++include "RecipeFixesMonster.cfg";
++
++# Remove Lilypad of Fertility (too OP when combined with sprinklers)
++minetweaker.remove(<1722>);
++
++# Remove crafting recipie for RotaryCraft blast furnace (Too cheap to get steel, use GT Steel)
++minetweaker.remove(<30872:45>);
++# Remove Rotary craft worktable (we can't control its recipies)
++minetweaker.remove(<30872:75>);
++# Add recipe to convert GregTech steel to RotaryCraft steel
++recipes.addShaped(<30887:1> * 4, [[<9630:26>, <9630:26>], [<9630:26>, <9630:26>]]);
++
++# Remove Furnace Generator (OP)
++minetweaker.remove(<2529:1>);
++# Remove Ender Generator (OP)
++minetweaker.remove(<2529:3>);
++# Remove Heated Redstone Generator (OP)
++minetweaker.remove(<2529:4>);
++# Remove Culinary Generator (OP)
++minetweaker.remove(<2529:5>);
++# Remove Pink Generator (OP)
++minetweaker.remove(<2529:9>);
++# Remove High Temperature Furnace Generator (OP)
++minetweaker.remove(<2529:10>);
++
++# Remove recipies for Bedrock Pickaxe to make it more expensive
++minetweaker.remove(<30771>);
++bedrockPickaxe = <30771> * 1;
++bedrockPickaxe.tag = { "ench": [{ "id": 33 as short, "lvl": 1 as short }] };
++# Replace the recipe with one using both bedrock and iridium
++recipes.addShaped(bedrockPickaxe, [[<30147>, <30147>, <30147>], [null, <30889:3>, null], [null, <30889:3>, null]]);
++
++# Remove recipies for Bedrock Sword to make it more expensive
++minetweaker.remove(<30806>);
++bedrockSword = <30806> * 1;
++bedrockSword.tag = { "ench": [
++  { "id": 16 as short, "lvl": 5 as short },
++  { "id": 21 as short, "lvl": 5 as short }
++] };
++# Replace the recipe with one using both bedrock and iridium
++recipes.addShaped(bedrockSword, [[null, <30147>, null], [null, <30147>, null], [null, <30889:3>, null]]);
++
++# Remove recipies for Bedrock Axe to make it more expensive
++minetweaker.remove(<30772>);
++# Replace the recipe with one using both bedrock and iridium
++recipes.addShaped(<30772>, [[<30147>, <30147>, null], [<30147>, <30889:3>, null], [null, <30889:3>, null]]);
++# Remove recipies for Bedrock Shovel to make it more expensive
++minetweaker.remove(<30773>);
++# Replace the recipe with one using both bedrock and iridium
++recipes.addShaped(<30773>, [[null, <30147>, null], [null, <30889:3>, null], [null, <30889:3>, null]]);
+diff -ruN 1.1.1-base/powercrystals/minefactoryreloaded/common.cfg 1.1.1-mod/powercrystals/minefactoryreloaded/common.cfg
+--- 1.1.1-base/powercrystals/minefactoryreloaded/common.cfg	2014-04-26 14:09:20.000000000 -0600
++++ 1.1.1-mod/powercrystals/minefactoryreloaded/common.cfg	2014-04-26 14:25:37.000000000 -0600
+@@ -366,10 +366,10 @@
+ 
+ recipesets {
+     # If true, MFR will register its GregTech-based recipes.
+-    B:EnableGregTechRecipes=false
++    B:EnableGregTechRecipes=true
+ 
+     # If true, MFR will register its Thermal Expansion-based recipes.
+-    B:EnableThermalExpansionRecipes=true
++    B:EnableThermalExpansionRecipes=false
+ 
+     # If true, MFR will register its standard (vanilla-item-only) recipes.
+     B:EnableVanillaRecipes=false
