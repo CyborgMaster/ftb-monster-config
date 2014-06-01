@@ -6,8 +6,6 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
-* Remove Titanium Bucket with bans instead of 0 (makes a shovel)
-* Remove Tinker's Construct tools with bans (makes a shovel)
 * have recipie for iridium tools include proper nbt data
 * Fix GregTech unification targets
 * Add iridium to extractor recipie
