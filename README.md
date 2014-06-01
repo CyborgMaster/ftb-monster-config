@@ -6,7 +6,6 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
-* have recipie for iridium tools include proper nbt data
 * Fix GregTech unification targets
 * Add iridium to extractor recipie
 
