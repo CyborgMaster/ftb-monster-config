@@ -6,7 +6,6 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
-* Remove /back server command
 * Remove Titanium Bucket with bans instead of 0 (makes a shovel)
 * Remove Tinker's Construct tools with bans (makes a shovel)
 * have recipie for iridium tools include proper nbt data
@@ -16,7 +15,7 @@ TODO:
 To Remove:
 --------------------------------------------------------------------------
 * Diamond Dolly - crashes when trying to put down barrel
-* Ability to make ederium with the induction smelter (then you need an
+* Ability to make enderium with the induction smelter (then you need an
   upgraded blast furnace to get it)
 * Essence seeds - or at least the way to get them from grass
 * Rainbow trees - maybe (too many golden apples)
@@ -73,3 +72,5 @@ Added Server Plugins:
 * Tekkit Customizer
 * World Guard
 * World Edit
+* Essentials
+* PermissionsEx v1.20.4 (Last version to work with 1.6.4)
