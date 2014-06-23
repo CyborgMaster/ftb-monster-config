@@ -6,6 +6,7 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
+* Fix nightvision goggles
 * Fix GregTech unification targets
 * Add iridium to extractor recipie
 
@@ -51,11 +52,7 @@ Enabled Mods
 
 Changes made directly to server configs without changing my config deploy
 ----------------------------------------------------------------------------
-* Big Reactors changed to require steel and obsidian
-    B:requireObsidianGlass=true
-    B:requireSteelInsteadOfIron=true
-* Turn on AE Spacial Storage
-
+All integrated
 
 Server Only Changes
 ----------------------------------------------------------------------------
