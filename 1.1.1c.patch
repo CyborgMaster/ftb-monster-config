@@ -112,7 +112,7 @@ diff -ruN 1.1.1-base/ChickenChunks.cfg 1.1.1-mod/ChickenChunks.cfg
  
 diff -ruN 1.1.1-base/GregTech/Unification.cfg 1.1.1-mod/GregTech/Unification.cfg
 --- 1.1.1-base/GregTech/Unification.cfg	2014-04-26 14:09:20.000000000 -0600
-+++ 1.1.1-mod/GregTech/Unification.cfg	2014-05-31 22:21:46.000000000 -0600
++++ 1.1.1-mod/GregTech/Unification.cfg	2014-06-23 21:20:48.000000000 -0600
 @@ -60,7 +60,7 @@
          B:ingotBronze_false=false
          B:ingotCopper_false=false
@@ -122,6 +122,15 @@ diff -ruN 1.1.1-base/GregTech/Unification.cfg 1.1.1-mod/GregTech/Unification.cfg
          B:ingotSilver_false=false
          B:ingotTin_false=false
          B:oreUranium_false=false
+@@ -3945,7 +3945,7 @@
+     forestry {
+         B:dustAsh_false=false
+         B:dustWood_false=false
+-        B:gemApatite_false=false
++        B:gemApatite_false=true
+         B:ingotBronze_false=false
+         B:ingotCopper_false=false
+         B:ingotTin_false=false
 @@ -4026,7 +4026,7 @@
          B:dustEnderPearl_false=false
          B:dustGold_false=false
@@ -142,6 +151,12 @@ diff -ruN 1.1.1-base/GregTech/Unification.cfg 1.1.1-mod/GregTech/Unification.cfg
      }
  
      ####################
+@@ -4330,5 +4330,3 @@
+     }
+ 
+ }
+-
+-
 diff -ruN 1.1.1-base/IguanaTweaksTConstruct.cfg 1.1.1-mod/IguanaTweaksTConstruct.cfg
 --- 1.1.1-base/IguanaTweaksTConstruct.cfg	2014-04-26 14:09:20.000000000 -0600
 +++ 1.1.1-mod/IguanaTweaksTConstruct.cfg	2014-04-26 14:25:37.000000000 -0600
