@@ -6,7 +6,6 @@ as hard as possible
 
 TODO:
 --------------------------------------------------------------------------
-* Fix nightvision goggles
 * Fix GregTech unification targets
 * Add iridium to extractor recipie
 
