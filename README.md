@@ -24,7 +24,7 @@ Commands to generate and apply diff file
 ``` bash
 colordiff -ruNw 1.1.1-base 1.1.1-mod | less -R
 diff -ruN 1.1.1-base 1.1.1-mod > 1.1.1.patch
-patch -p1 < ../1.1.1.patch
+patch -p1 --no-backup-if-mismatch < ../1.1.1.patch
 ```
 
 Mods to Remove
