@@ -627,8 +627,8 @@ diff -ruN 1.1.2-base/machinemuse/recipes/ThermalExpansion.recipes 1.1.2-mod/mach
 \ No newline at end of file
 diff -ruN 1.1.2-base/minetweaker/main.cfg 1.1.2-mod/minetweaker/main.cfg
 --- 1.1.2-base/minetweaker/main.cfg	2014-06-29 20:03:17.000000000 -0600
-+++ 1.1.2-mod/minetweaker/main.cfg	2014-06-29 20:17:34.000000000 -0600
-@@ -8,4 +8,65 @@
++++ 1.1.2-mod/minetweaker/main.cfg	2014-07-01 13:19:09.000000000 -0600
+@@ -8,4 +8,66 @@
  
  # Add your commands here
  
@@ -639,10 +639,11 @@ diff -ruN 1.1.2-base/minetweaker/main.cfg 1.1.2-mod/minetweaker/main.cfg
 +# Remove Lilypad of Fertility (too OP when combined with sprinklers)
 +minetweaker.remove(<1722>);
 +
-+# Remove crafting recipie for RotaryCraft blast furnace (Too cheap to get steel, use GT Steel)
-+minetweaker.remove(<30872:45>);
-+# Remove Rotary craft worktable (we can't control its recipies)
-+minetweaker.remove(<30872:75>);
++# # Remove crafting recipie for RotaryCraft blast furnace (Too cheap to get steel, use GT Steel)
++# minetweaker.remove(<30872:45>);
++# # Remove Rotary craft worktable (we can't control its recipies)
++# minetweaker.remove(<30872:75>);
++
 +# Add recipe to convert GregTech steel to RotaryCraft steel
 +recipes.addShaped(<30887:1> * 4, [[<9630:26>, <9630:26>], [<9630:26>, <9630:26>]]);
 +
@@ -662,40 +663,40 @@ diff -ruN 1.1.2-base/minetweaker/main.cfg 1.1.2-mod/minetweaker/main.cfg
 +# Add recipie to craft nightvision goggles back to unused form
 +recipes.addShapeless(<30078> * 1, [<30078:*>]);
 +
-+# Remove recipies for Bedrock Pickaxe to make it more expensive
-+minetweaker.remove(<30771>);
-+bedrockPickaxe = <30771> * 1;
-+bedrockPickaxe.tag = { "ench": [{ "id": 33 as short, "lvl": 1 as short }] };
-+# Replace the recipe with one using both bedrock and iridium
-+recipes.addShaped(bedrockPickaxe, [[<30147>, <30147>, <30147>],
-+                                   [null, <30889:3>, null],
-+                                   [null, <30889:3>, null]]);
++# # Remove recipies for Bedrock Pickaxe to make it more expensive
++# minetweaker.remove(<30771>);
++# bedrockPickaxe = <30771> * 1;
++# bedrockPickaxe.tag = { "ench": [{ "id": 33 as short, "lvl": 1 as short }] };
++# # Replace the recipe with one using both bedrock and iridium
++# recipes.addShaped(bedrockPickaxe, [[<30147>, <30147>, <30147>],
++#                                    [null, <30889:3>, null],
++#                                    [null, <30889:3>, null]]);
 +
-+# Remove recipies for Bedrock Sword to make it more expensive
-+minetweaker.remove(<30806>);
-+bedrockSword = <30806> * 1;
-+bedrockSword.tag = { "ench": [
-+  { "id": 16 as short, "lvl": 5 as short },
-+  { "id": 21 as short, "lvl": 5 as short }
-+] };
-+# Replace the recipe with one using both bedrock and iridium
-+recipes.addShaped(bedrockSword, [[null, <30147>, null],
-+                                 [null, <30147>, null],
-+                                 [null, <30889:3>, null]]);
++# # Remove recipies for Bedrock Sword to make it more expensive
++# minetweaker.remove(<30806>);
++# bedrockSword = <30806> * 1;
++# bedrockSword.tag = { "ench": [
++#   { "id": 16 as short, "lvl": 5 as short },
++#   { "id": 21 as short, "lvl": 5 as short }
++# ] };
++# # Replace the recipe with one using both bedrock and iridium
++# recipes.addShaped(bedrockSword, [[null, <30147>, null],
++#                                  [null, <30147>, null],
++#                                  [null, <30889:3>, null]]);
 +
-+# Remove recipies for Bedrock Axe to make it more expensive
-+minetweaker.remove(<30772>);
-+# Replace the recipe with one using both bedrock and iridium
-+recipes.addShaped(<30772>, [[<30147>, <30147>, null],
-+                            [<30147>, <30889:3>, null],
-+                            [null, <30889:3>, null]]);
++# # Remove recipies for Bedrock Axe to make it more expensive
++# minetweaker.remove(<30772>);
++# # Replace the recipe with one using both bedrock and iridium
++# recipes.addShaped(<30772>, [[<30147>, <30147>, null],
++#                             [<30147>, <30889:3>, null],
++#                             [null, <30889:3>, null]]);
 +
-+# Remove recipies for Bedrock Shovel to make it more expensive
-+minetweaker.remove(<30773>);
-+# Replace the recipe with one using both bedrock and iridium
-+recipes.addShaped(<30773>, [[null, <30147>, null],
-+                            [null, <30889:3>, null],
-+                            [null, <30889:3>, null]]);
++# # Remove recipies for Bedrock Shovel to make it more expensive
++# minetweaker.remove(<30773>);
++# # Replace the recipe with one using both bedrock and iridium
++# recipes.addShaped(<30773>, [[null, <30147>, null],
++#                             [null, <30889:3>, null],
++#                             [null, <30889:3>, null]]);
 diff -ruN 1.1.2-base/powercrystals/minefactoryreloaded/common.cfg 1.1.2-mod/powercrystals/minefactoryreloaded/common.cfg
 --- 1.1.2-base/powercrystals/minefactoryreloaded/common.cfg	2014-06-29 20:03:17.000000000 -0600
 +++ 1.1.2-mod/powercrystals/minefactoryreloaded/common.cfg	2014-06-29 20:17:34.000000000 -0600
