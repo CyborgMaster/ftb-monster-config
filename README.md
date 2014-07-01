@@ -8,7 +8,6 @@ TODO:
 --------------------------------------------------------------------------
 * Fix GregTech unification targets
   * All gems to project red
-* Upgrade to 1.1.2
 * Add iridium to extractor recipie
 
 To Remove:
