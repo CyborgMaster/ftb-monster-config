@@ -15,8 +15,8 @@ TekkitCustomizer:
       - 20569:*:Titanium Bucket:Crashes the server when picking up some liquids
     OwnershipBanned:
       - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-      - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
-      - 30872:75:RC Worktable:Not needed, use a normal crafting table
+      # - 30872:45:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+      # - 30872:75:RC Worktable:Not needed, use a normal crafting table
       - 20569:*:Titanium Bucket:Crashes the server when picking up some liquids
       - 14061:*:Lumber Axe:Too easy to get, go for the Iridium Axe instead.
     UsageBanned:
@@ -27,8 +27,8 @@ TekkitCustomizer:
     PlacementBanned: []
     WorldBanned:
       - 1722:*:Lillypad of Fertility:Way too OP when combined with magic crops
-      - 3721:2:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
-      - 3721:6:RC Worktable:Not needed, use a normal crafting table
+      # - 3721:2:RC Blast Furnace:Too easy to get steel, use GT Blast Furnace
+      # - 3721:6:RC Worktable:Not needed, use a normal crafting table
       - 2529:1:Furnace Generator:OP Power Generation
       - 2529:3:Ender Generator:OP Power Generation
       - 2529:4:Heated Redstone Generator:OP Power Generation
