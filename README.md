@@ -8,7 +8,6 @@ TODO:
 --------------------------------------------------------------------------
 * Fix GregTech unification targets
   * All gems to project red
-* Add iridium to extractor recipie
 
 To Remove:
 --------------------------------------------------------------------------
