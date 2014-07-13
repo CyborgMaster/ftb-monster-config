@@ -111,6 +111,24 @@ diff -ruN 1.1.2-base/ChickenChunks.cfg 1.1.2-mod/ChickenChunks.cfg
  
  block.id=243
  
+diff -ruN 1.1.2-base/ComputerCraft.cfg 1.1.2-mod/ComputerCraft.cfg
+--- 1.1.2-base/ComputerCraft.cfg	2014-06-29 20:03:16.000000000 -0600
++++ 1.1.2-mod/ComputerCraft.cfg	2014-07-12 19:44:49.000000000 -0600
+@@ -47,7 +47,7 @@
+     B:http_enable=true
+ 
+     # Set the list of domains that can be accessed through "http" API on Computers. Set this to "*" to enable access to the entire internet.
+-    S:http_whitelist=*pastebin.com;*computercraft.info
++    S:http_whitelist=jrm.homenet.org
+ 
+     # The range of Wireless Modems at maximum altitude in clear weather, in meters
+     I:modem_highAltitudeRange=384
+@@ -94,5 +94,3 @@
+     # The Item ID for Treasure Disks
+     I:treasureDiskItemID=31705
+ }
+-
+-
 diff -ruN 1.1.2-base/GregTech/Unification.cfg 1.1.2-mod/GregTech/Unification.cfg
 --- 1.1.2-base/GregTech/Unification.cfg	2014-06-29 20:03:16.000000000 -0600
 +++ 1.1.2-mod/GregTech/Unification.cfg	2014-06-29 20:17:34.000000000 -0600
