@@ -38,6 +38,7 @@ Added Mods
 * GregTech: 4.08s
 * Advanced Solar Panel: Version: 3.4.7
 * Gravitation Suite: v1.9.9a
+* Carpenters Blocks: v3.2.6
 
 Disabled Mods
 ---------------------------------------------------------------------------
